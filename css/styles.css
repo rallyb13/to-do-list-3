@@ -1,0 +1,15 @@
+.active-task {
+  color: #0088cc;
+}
+.active-task:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#lists input {
+  width: 200px;
+}
+
+#tasks {
+  display: none;
+}

@@ -8,48 +8,50 @@
     <title>To do list </title>
   </head>
   <body>
-    <!-- <div class="jumbotron"> -->
+    <div class="jumbotron">
       <div class="container">
         <h1>My To Do List</h1>
 
         <div class="row">
-          <div class=col-md-6>
-            <h2>To do:</h2>
-            <form id="lists">
-              <div class="form-group">
-                <h3>Create a list</h3>
-                <label for="new-list">Name</label>
-                <input type="text" id="new-list" class="form-control">
-              </div>
-              <button type="submit" class="btn">Create</button>
-            </form>
+          <div class="center1">
+            <div class="col-md-6">
+              <form id="lists">
+                <div class="form-group">
+                  <h3>Create a to do list</h3>
+                  <!-- <label for="new-list">Name</label> -->
+                  <input type="text" id="new-list" class="form-control" placeholder="Name" required>
+                </div>
+                <button type="submit" class="btn">Create</button>
+              </form>
+            </div>
           </div>
-          <div class=col-md-6>
-            <h2 class="this-list"></h2>
-            <form id="tasks">
-              <div class="form-group">
-                <h3>Create tasks:</h3>
-                <label for="new-task">Description</label>
-                <input type="text" class="form-control new-task">
-              </div>
-              <button type="submit" class="btn">Create</button>
-            </form>
+          <div class="center">
+            <div class="col-md-6">
+              <form class="tasks">
+                <div class="form-group">
+                  <h3>Create tasks for <span class="this-list"></span>:</h3>
+                  <!-- <label for="new-task">Description</label> -->
+                  <input type="text" class="form-control new-task" placeholder="Description" required>
+                </div>
+                <button type="submit" class="btn">Create</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    <!-- </div> -->
+    </div>
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 listlist">
           <h2>Lists:</h2>
           <ul id="to-do-lists">
 
           </ul>
 
         </div>
-        <div class="col-md-6">
-          <h2 class="this-list"></h2>
+        <div class="col-md-6 tasks">
+          <h2> <span class="this-list"></span> tasks:</h2>
           <ul id="these-tasks">
           </ul>
         </div>

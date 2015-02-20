@@ -1,3 +1,14 @@
+body{
+  background-color: #FF8C15;
+  /*background-color: #B2AB8F;*/
+}
+
+.jumbotron{
+  background-color: #FFD514;
+  /*background-color: #F6CA36;*/
+
+}
+
 .active-task {
   color: #0088cc;
 }
@@ -10,6 +21,27 @@
   width: 200px;
 }
 
-#tasks {
+.tasks, .listlist{
   display: none;
 }
+
+.to-center{
+  text-align: center;
+  padding: 0 200px 0 0;
+}
+
+.listlist li{
+  color: blue;
+}
+
+.listlist li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*form {
+  text-align: center;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}*/

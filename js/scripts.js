@@ -8,6 +8,7 @@ $(function() {
   $("form#lists").submit(function(event) {
     event.preventDefault();
 
+    $(".listlist").show();
     var name = $("input#new-list").val();
     var newList = {name: name, tasks: []}
 
@@ -16,8 +17,10 @@ $(function() {
     $("input#new-list").val("");
 
     $(".active-list").last().click(function() {
-      $("#tasks").show();
-      $("h2.this-list").text(newList.name);
+      $(".tasks").show();
+      $(this).css("color", "purple");
+      $("h1").addClass("to-center");
+      $(".this-list").text(newList.name);
       $("ul#these-tasks").empty();
       newList.tasks.forEach(function(task) {
         $("ul#these-tasks").append("<li>" + task + "</li>");
@@ -26,7 +29,7 @@ $(function() {
     });
   });
 
-  $("form#tasks").submit(function(event) {
+  $("form.tasks").submit(function(event) {
     event.preventDefault();
     var task = $("input.new-task").val();
     currentList.tasks.push(task);
